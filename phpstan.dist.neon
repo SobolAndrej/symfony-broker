@@ -1,0 +1,15 @@
+includes:
+    - vendor/phpstan/phpstan-doctrine/extension.neon
+    - vendor/phpstan/phpstan-phpunit/extension.neon
+parameters:
+    memoryLimitFile: var/cache/1024MB
+    level: max
+    tmpDir: var/cache/phpstan
+    fileExtensions:
+        - php
+    paths:
+        - bin/
+        - config/
+        - public/
+        - src/
+        - tests/
